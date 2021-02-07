@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Title in the tab</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  </head>
+  <body>
+    <section id="mainSection">
+      <h1>The Weather App</h1>
+      <section id="infoSection">
+        <h2>Input Your Coordinates</h2>
+        <div class="latitude">
+          <p><span>latitude</span></p>
+          <input id="inputBox" type="number" />
+        </div>
+        <div class="longitude">
+          <p><span>longitude</span></p>
+          <input id="inputBox" type="number" />
+        </div>
+        <button>Get Weather Data</button>
+      </section>
+      <div id="dataListSection">
+        <ul class="dataList">
+          <li>
+            <h2>Date:</h2>
+            <span class="parameters" id="time"><p>Time</p></span>
+          </li>
+          <li>
+            <h2>Air Temperature:</h2>
+            <span class="parameters" id="airTemp"><p>Air Temp</p></span>
+          </li>
+          <li>
+            <h2>Swell Height:</h2>
+            <span class="parameters" id="swellHeight"><p>Swell Height</p></span>
+          </li>
+          <li>
+            <h2>Wind Speed:</h2>
+            <span class="parameters" id="windSpeed"><p>Wind Speed</p></span>
+          </li>
+          <li>
+            <h2>Wind Direction:</h2>
+            <span class="parameters" id="windDirection"
+              ><p>Wind Direction</p></span
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <canvas id="chart" width="400" height="400"></canvas>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

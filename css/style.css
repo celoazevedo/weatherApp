@@ -1,0 +1,101 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  color: rgb(241, 222, 222);
+}
+
+body > * {
+  text-align: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#mainSection {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section #infoSection {
+  display: flex;
+  height: 300px;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  margin: 0, auto;
+}
+
+input {
+  text-align: center;
+  /* display: block; */
+  margin: 0 auto;
+}
+
+button {
+  /* width: 50%; */
+  margin: 0, auto;
+}
+
+#dataListSection {
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+body {
+  background-image: url("https://i.imgur.com/o1e9atI.jpeg");
+}
+
+ul {
+  font-size: 0.8em;
+}
+
+li {
+  list-style: none;
+}
+
+.latitude * {
+  margin: 0;
+}
+
+.longitude * {
+  margin: 0;
+}
+
+/* section {
+  margin: 0 auto;
+} */
